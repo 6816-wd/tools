@@ -1,0 +1,7 @@
+<h3>1/t 计算器</h3>
+t：<br><textarea id="ts" rows="6" cols="24"></textarea><br>
+<button onclick="calc()">算</button>
+<pre id="r"></pre>
+<script>
+function calc(){var a=document.getElementById('ts').value.split('\n');var o=[];for(var i=0;i<a.length;i++){if(a[i].trim()==='')continue;o.push(a[i]+' → '+(1/a[i]));}document.getElementById('r').innerText=o.join('\n');}
+</script>
